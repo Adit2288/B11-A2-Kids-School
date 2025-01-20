@@ -35,9 +35,20 @@
 font-weight: 600;
    }
 
+   .btn-secondary{
+    border-radius: 12px;
+    background: rgb(17, 17, 17);
+    padding: 10px 40px;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    border: none;
+    margin-top: 15px;
+   }
 
 
-   /*  */
+
+   /* nav section */
   #nav-part {
     width:80.49% ;
   }
@@ -110,9 +121,100 @@ font-weight: 600;
     font-weight: 700;
    }
 
-   
+   /* banner part */
 
-   /* i phone 14 */
+   #main-banner{
+    width:80.49% ;
+    display: flex;
+     justify-content: space-between;
+     align-items: center;
+   }
+
+   .banner-title{
+    font-size: 3.5rem;
+    font-weight: 700;
+    letter-spacing: 0%;
+   }
+
+   .banner-title .part1{
+    color: rgb(254, 163, 1);
+   }
+   .banner-title .part2{
+     color: rgb(17, 17, 17);
+   }
+   .banner-title .part3{
+     color: rgb(1, 172, 253);
+   }
+
+  .banner-content .banner-des{
+     font-size: 0.9rem;
+     font-weight: 400;
+     color: black;
+     margin-top: 10px;
+
+  }
+
+
+
+  /* footer */
+
+  footer{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    background-color:rgb(1, 172, 253); ;
+  }
+
+   .footer-part{
+    width: 80.49%;
+ 
+   }
+
+   .kids-edu .foot-icon{
+         display: flex;
+         gap: 7px;
+         margin-bottom: 8px;
+   }
+
+    .footer-part .about-school ul li{
+        list-style: none;
+    }
+
+    .footer-part .about-school ul li a{
+        text-decoration: none;
+        color: white;
+        margin-top: 10px;
+    }
+
+    .footer-part{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 30px;
+        padding: 40px;
+       
+    }
+
+    .about-school h3, .foot-icon h3,.foot-des, .social-part h3{
+        color: white;
+    }
+
+    .social-part h3{
+        margin-bottom: 10px;
+    }
+
+    .foot-des{
+        margin-top: 10px;
+    }
+
+    .about-school h3,.about-school h3 a{
+        margin-bottom: 10px;
+    }
+        .social-part img{
+            margin-right: 10px;
+        }
+   /* iphone 14 */
 
    @media screen and (max-width:430px){
        #nav-part nav ul{
@@ -136,6 +238,43 @@ font-weight: 600;
             display: flex;
             align-items: center;
             
+       }
+    
+       #main-banner{
+       width: 90%;
+       flex-direction: column-reverse;
+       align-items: center;
+       justify-content: center;
+        gap: 20px;
+       }
+
+       .image-section img{
+         width: 100%;          
+       }
+      
+       .banner-content h1{
+          font-size: 2rem;
+          text-align: center;
+       }
+
+       .banner-des{
+        text-align: center;
+        font-size: 0.7rem;
+         font-weight: 500;
+
+       }
+
+       .banner-content button{
+        text-align: center;
+       }
+
+       .button-center{
+        display: flex;
+        justify-content: center;
+       }
+
+       .footer-part{
+       grid-template-columns: repeat(1,1fr);
        }
 
    }
