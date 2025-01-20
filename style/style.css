@@ -1,0 +1,141 @@
+
+.quicksand-normal {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+ body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ header{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+ /* shared item */
+
+ .btn-priamry{
+    border-radius: 12px;
+    background: rgb(254, 163, 1);
+    padding: 10px 40px;
+    color: rgb(255, 255, 255);
+    border: none;
+    font-size: 20px;
+font-weight: 600;
+   }
+
+
+
+   /*  */
+  #nav-part {
+    width:80.49% ;
+  }
+
+  #nav-part nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px 20px 0px;
+  }
+
+  #nav-part nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #nav-part nav .nav-logo{
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+  }
+
+  .logo-head{
+    color: rgb(17, 17, 17);
+   font-size: 2rem;
+   font-weight: 700;
+  }
+
+  #nav-part nav ul{
+    display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 26.87%;  
+   gap: 2rem;
+
+}
+  #nav-part nav ul li{
+    list-style: none;
+
+  }
+  #nav-part nav ul li a {
+    text-decoration: none;
+  }
+
+  .bar-icon{
+    display: none;
+  }
+
+  .ancer-1{
+    color: rgb(254, 163, 1);
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+
+  .ancer-2{
+    color: rgb(1, 172, 253);
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+
+  .ancer-3{
+    color: rgb(5, 212, 223);
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+
+   .ancer-4{
+    color: rgb(93, 88, 239);
+    font-size: 1.3rem;
+    font-weight: 700;
+   }
+
+   
+
+   /* i phone 14 */
+
+   @media screen and (max-width:430px){
+       #nav-part nav ul{
+        display: none;
+       }
+       
+       #nav-part .contact-btn{
+        display: none;
+       }
+
+       nav .nav-logo .logo-head{
+        display: none;
+       }
+
+       #nav-part{
+        width: 90%; 
+       }
+
+       .bar-icon{
+            display: contents;
+            display: flex;
+            align-items: center;
+            
+       }
+
+   }
