@@ -47,6 +47,11 @@
 font-weight: 600;
    }
 
+   .btn-priamry:hover{
+      background-color: white;
+      color: orange;
+   }
+
    .btn-secondary{
     border-radius: 12px;
     background: rgb(17, 17, 17);
@@ -58,7 +63,24 @@ font-weight: 600;
     margin-top: 15px;
    }
 
+   .btn-secondary:hover{
+    background-color: white;
+    color: black;
+   }
 
+  .final-btn{
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+
+   .icon-primary{
+    border-radius: 140px;
+    padding: 20px;
+    color: white;
+
+/* Orange */
+background: rgb(254, 163, 1);
+   }
 
    /* nav section */
   #nav-part {
@@ -175,7 +197,7 @@ font-weight: 600;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    /* margin-top: 50px; */
     background-color:rgb(1, 172, 253); ;
   }
 
@@ -251,7 +273,7 @@ font-weight: 600;
   padding: 60px 0px 60px 0px; ;
 }
 
- .standerd-content h2{
+ .standard-title{
     font-size: 2.5rem;
     font-weight: 700;
  }
@@ -319,19 +341,178 @@ background: linear-gradient(180.00deg, rgb(222, 245, 255),rgba(255, 255, 255, 0)
      color: rgb(128, 128, 128);
    }
 
-   .card1-btn ,.card2-btn , .card3-btn{
-    border: none;
-   }
+
    .card1-btn{
-color:hsl(201, 100%, 70%)) ;
+    text-decoration: none;
+color:hsl(201, 100%, 70%) ;
    }
    .card2-btn{
+    text-decoration: none;
     color:rgb(240, 170, 0) ;
    }
    .card3-btn{
+    text-decoration: none;
     color:rgb(135, 0, 255) ;
    }
 
+  .icons{
+  
+    display: flex;
+    gap: 10px;
+  }
+
+  .icons button{
+    border: none;
+  }
+
+  .icons button :hover{
+    background-color: white;
+    color: orange;
+  }
+
+    /* our stories */
+
+   main{
+    
+   }
+    .our-stories{
+      background: url("../assets/bg.png"),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+    background-repeat: no-repeat;
+    }
+
+    .our-stories{
+      width: 100vw;
+      margin-top: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .our-stories h2{
+      margin-bottom: 40px;
+    }
+
+  .story-card{
+    width: 80.49%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 40px;
+  }
+
+
+
+  .large-card{
+    width: 100%;
+    background-color: white;
+    border-radius: 16px;
+  }
+  
+  .large-card img{
+    width: 100%;
+    border-radius: 16px 16px 0px 0px;
+  }
+
+  .square-card{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+  }
+
+   .square1 ,.square2 ,.square3 ,.square4{
+    width: 100%;
+    border-radius: 16px;
+background: rgb(255, 255, 255);
+ 
+   }
+
+   .square1 img , .square2 img ,.square3 img ,.square4 img{
+    width: 100%;
+    border-radius: 16px 16px 0px 0px;
+   }
+
+    .date1-title ,.date1-des , .date2-title , .date3-title ,.date4-title ,.date5-title
+    {
+      margin-left: 20px;
+    }
+
+    .date1 ,.date2 ,.date3 ,.date4 ,.date5{
+      color: white;
+      padding: 10px;
+      width: 50%;
+    
+      text-align: center;
+    }
+    .date1{
+      position: relative;
+      z-index: 1;
+      top: -5%;
+      left: 6.5%;
+      width: 25%;
+      border-radius: 47.93px;
+background: rgb(60, 216, 232);
+    }
+    .date2{
+      border-radius: 47.93px;
+      background: rgb(149, 178, 38);
+      position: relative;
+      z-index: 1;
+      top: -6.5%;
+      left: 25%;
+    }
+
+    .date3{
+      border-radius: 47.93px;
+      background: rgb(93, 88, 240);
+      position: relative;
+      z-index: 1;
+      top: -6.5%;
+      left: 25%;
+
+    }
+
+    .date4{
+      border-radius: 47.93px;
+      background: rgb(149, 178, 38);
+      position: relative;
+      z-index: 1;
+      top: -6.5%;
+      left: 25%;
+    }
+
+    .date5{
+      width: 30%;
+      border-radius: 47.93px;
+     background: rgb(149, 178, 38);
+     position: relative;
+     z-index: 1;
+     top: -6.5%;
+     left: 15%;
+    }
+
+    .date1-title{
+      padding: 2.8px 0px 50px  0px;
+      font-size: 1.5rem;
+      font-weight: 700;
+      text-align: left;
+    }
+
+    .date1-des{
+      color: rgb(102, 102, 102);
+      font-size: 0.9rem;
+      text-align: left;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+
+      .date2-title,.date3-title,.date4-title,.date5-title{
+        padding: 2.8px 0px 20px 4px;
+        font-size: 0.9rem;
+        font-weight: 700;
+        text-align: left;
+      }
+  
 
    /* iphone 14 */
 
@@ -350,6 +531,7 @@ color:hsl(201, 100%, 70%)) ;
 
        #nav-part{
         width: 90%; 
+        border-bottom: 2px solid orange;
        }
 
        .bar-icon{
@@ -400,12 +582,37 @@ color:hsl(201, 100%, 70%)) ;
         grid-template-columns: repeat(1,1fr);
        }
       
+ 
        .standerd-content h2{
           text-align: center;
        }
 
-       ..standerd-content{
+       .standerd-content{
         padding: auto;
        }
+
+       .large-card{
+        display: none;
+       }
+
+       .story-card{
+       
+          grid-template-columns: repeat(1,1fr);
+       }
+
+       .square-card{
+        grid-template-columns: repeat(2,1fr);
+       }
+       
+       .icons{
+        display: none;
+       }
+
+      .size-bar
+      {
+        font-size: larger;
+      }
+
+    
 
    }
